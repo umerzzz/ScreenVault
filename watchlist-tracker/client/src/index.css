@@ -1,0 +1,153 @@
+:root {
+  /* Light theme */
+  --color-background-light: #f8f9fa;
+  --color-text-light: #121212;
+  --color-primary-light: #1976d2;
+  --color-secondary-light: #e91e63;
+
+  /* Dark theme */
+  --color-background-dark: #121212;
+  --color-text-dark: #f8f9fa;
+  --color-primary-dark: #90caf9;
+  --color-secondary-dark: #f48fb1;
+
+  /* Common */
+  --border-radius-small: 8px;
+  --border-radius-medium: 12px;
+  --border-radius-large: 16px;
+  --transition-speed: 0.3s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background-light);
+  color: var(--color-text-light);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+}
+
+.dark-mode body {
+  background-color: var(--color-background-dark);
+  color: var(--color-text-dark);
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.gap-1 {
+  gap: 0.5rem;
+}
+
+.gap-2 {
+  gap: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+.mb-3 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 2rem;
+}
+
+.mt-1 {
+  margin-top: 0.5rem;
+}
+
+.mt-2 {
+  margin-top: 1rem;
+}
+
+.mt-3 {
+  margin-top: 1.5rem;
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}
+
+/* Animation classes */
+.hover-scale {
+  transition: transform var(--transition-speed) ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* Text colors */
+.text-primary {
+  color: var(--color-primary-light);
+}
+
+.dark-mode .text-primary {
+  color: var(--color-primary-dark);
+}
+
+.text-secondary {
+  color: var(--color-secondary-light);
+}
+
+.dark-mode .text-secondary {
+  color: var(--color-secondary-dark);
+}
+
+/* High contrast elements */
+.high-contrast {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.dark-mode .high-contrast {
+  color: #ffffff;
+  background-color: #000000;
+}
